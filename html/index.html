@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- fontswesome icons -->
+    <script src="https://kit.fontawesome.com/b62c7f56ed.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Maven+Pro:wght@700&family=Open+Sans&family=Roboto+Mono:wght@300;600&family=Roboto+Slab&family=Solway&display=swap"
+        rel="stylesheet">
+    <title>KL Japanese Language school </title>
+    <link rel="shortcut icon" href="../images/class03.PNG">
+</head>
+
+<body>
+
+    <button class="open-button" onclick="openForm()" id="opn-btn"><i class="fas fa-envelope fa-3x"></i></button>
+        <!--This is for pop where a user can send the message offline-->
+    <div id="letpop">
+        <form id="MyForm">
+            <button type="submit" onclick="closeForm()" id="close-btn"><i class="fas fa-times fa-2x"></i></button>
+            <label for="firstname">Full Name:</label>
+            <input type="text" name="" id="firstname" required>
+            <label for="Email">Email:</label>
+            <input type="text" name="" id="Email" required>
+            <label for="number-pop">Number:</label>
+            <input type="number" name="" id="number-pop" required>
+            <span id="error"></span>
+            <input type="submit" value="Send" id="send" onclick="msg-aler">
+
+
+        </form>
+    </div>
+      <!--This is the arrow when is enclosed inside the <a> that helps for the quick switching to home page or main index page -->
+    <div id="move-up">
+        <a href="#"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+
+
+    </div>
+     <!--This is the home page of the website-->
+    <div class="toggle">
+        <h3>KL Japanese Language School</h3>
+        <label for="togglebtn"><span></span>
+            <span></span><span></span></label>
+    </div>
+
+    <input type="checkbox" name="" id="togglebtn">
+    <header class="header">
+        <h3>KL Japanese Language School</h3>
+        <!--This is a nav tab of the website-->
+        <nav class="nav">
+            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li><a href="#contact"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
+            <li><a href="#aboutus"><i class="fa fa-book" aria-hidden="true"></i>About</a></li>
+            <li><a href="#services2"><i class="fa fa-plane" aria-hidden="true"></i>Services</a></li>
+            <li><a href="#gallery"><i class="fa fa-picture-o" aria-hidden="true"></i>Gallery</a></li>
+        </nav>
+    </header>
+    <section class="main_section">
+        <div class="section_one">
+            <div class="section_one_title">
+                <h1>Welcome To KL Japanese Language School</h1>
+
+            </div><br>
+            <div class="section_two">お気軽にご参加ください</div>
+            <div class="section_two">"最も簡単な方法で日本語を学び、<br>
+                日本であなたの未来を明るくする "</div>
+            <div class="section_two_title">
+                <h1 id="time"></h1>
+                <h1><br>Grant opportunity with more <span>Special Discount!</span></h1>
+            </div>
+            <div class="section_btn">
+                <a href="#register"><button>Register</button></a>
+
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="services-top services_one">
+            <h2>Extra Activities-1</h2>
+            <li>Free Japanese culture classes</li>
+            <li>Weekley presentation</li>
+            <li>Carrer guidance and conselling</li>
+        </div>
+
+        <div class="services-top services_two">
+            <h2>Qualification of teachers</h2>
+            <li>N2 level teachers</li>
+            <li>five years of experiences</li>
+            <li>full time teachers</li>
+        </div>
+        <div class="services-top services_three">
+            <h2>Class Schedule</h2>
+            <li>morning shift 7:00 AM - 9:00 AM</li>
+            <li>Day shift 10:00 AM - 1:00 PM</li>
+            <li>Evening shift 3:00 PM - 5:00 PM</li>
+        </div>
+        <div class="services-top services_four">
+            <h2>Extra Activities-2</h2>
+            <li>Internet class to support Language study</li>
+            <li> Latest syllabus with audio visual learning classes.</li>
+            <li>
+                Better environment where teachers and students can teach and learn easily </li>
+
+        </div>
+        <div class="services-top services_five">
+            <h2>Extra Activities-3</h2>
+            <li>Visa approving guidance</li>
+            <li>Students can grow in terms of knowledge, freedom and responsibility followed by a teachers</li>
+            <li>
+
+                Many more extra activities like Japanese Film Show Programme, Hasikai, Karaoke, Seminar, etc
+            </li>
+        </div>
+        <div class="services-top services_six">
+            <h2>Extra Activities-4</h2>
+            <li>Offering Translation and Interpretation services for Students as well as others in need.</li>
+            <li>Quality Education with minimum charge for students</li>
+            <li>Carrer guidance and conselling</li>
+            <li>Student oriented teaching strategy</li>
+        </div>
+        <div class="services-top services_seven">
+            <h2>Intakes</h2>
+            <li>January/February Intake</li>
+            <li>May/June Intake</li>
+            <li>September/October Intake</li>
+        </div>
+        <div class="services-top services_eight">
+            <h2>Extra Qualification of teachers</h2>
+            <li>Japanese teachers having teaching license from Japan</li>
+            <li>Nepali teachers trained from The Japan Foundation</li>
+            <li>Teachers with the experience to guide numbers of Japanese Language Learners and provide them a right
+                guidance toward their future career</li>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--This is the contact page of the website-->
+    <fieldset id="contact">
+        <legend>
+            <h1>Contact Us</h1>
+        </legend>
+        <div class="container">
+            <!--form to contact with the institute-->
+            <form id="contact-from">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter Firstname here..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Enter Lastname here..">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Abc@gmail.com">
+
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit" onclick="clicksubmit()">
+            </form>
+        </div>
+    </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+     <!--This is the information of the organization and the members that are associated with the organization-->
+    <fieldset id="aboutus">
+        <legend>
+            <h1>About us</h1>
+        </legend>
+        <div class="aboutus">
+
+            <div class="about-con">
+                <div class="about-box">
+                    <div class="about-img"><img src="../images/about.jpg" alt=""></div>
+                    <div class="service-title">
+                        <h2>About</h2>
+                    </div>
+                    <div class="service-desc">
+                        <p>As we know, Japan is one of the developed and prosperous countries in the world. Its natural
+                            beauty, rich and diverse culture and life style have really fascinated people round the
+                            globe. Moreover, its technological breakthrough and educational advancement have created
+                            curiosity and attraction to the people all over the world. In this regard, Nepal and
+                            Nepalese cannot remain aloof from the influence of Japan. As a result, Japan has become a
+                            popular destination for abroad study among Nepalese Students and career seekers.<br>Kl
+                            Japanese Language is an organization which aims to provide better
+                            learning experiences to those students who want to learn Japanese Language. KL Japanese
+                            Language started serving japanese language class to different students since 2014 A.D. If
+                            any students
+                            who is thinking to persue their education further in Japan, Kl Japanese Language institute
+                            is best for them.We succeed to exchange around 2000 students at Japan. Many of our students
+                            are currently studying in Japan in different colleges and universities. Some of them are
+                            also studying in different National universities of Japan.KL Japanese Language School has
+                            been one of the best institute in eastern part of Kathmandu valley. It was established in
+                            2014 A.D. initially as KL Japanese Language School and has been a tremendous institute for
+                            spreading quality education. It has been basically running in three different time i.e it
+                            has been running morning shift, day shift, evening shift. It has carved for itself a
+                            brilliant educational trajectory since its inception.<br>We are located at Putalisadak,
+                            Kathmandu. We warmly welcome you all and promise to provide best services to
+                            you.<br><br><br><b>OUR MISSION</b><br>To established itself as a world class learning center
+                            to inculcating positive attitude, skills, ability and value based knowledge in students to
+                            compete successful in their chosen discipline and helps to build their career.<br><br><b>OUR
+                                AIM</b><br>
+                            The main aim of the institution is to make students Learn to write, read and speak the
+                            language with the Complete Japanese course of offered by the institute and helping the
+                            students to have a better future in Japan.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="service-con">
+
+            <div class="service-box">
+                <div class="service-img"><img src="../images/pujan.jpg" alt=""></div>
+                <div class="service-title"><br><b>Message from CEO<br>Mr.Pujan Khatiwada <br></b></div>
+                <div class="service-desc">
+
+                    <p><br>Dear Parents and Students,<br>
+                        Greeting of the day!<br>
+
+                        Thank you for choosing KL Japanese Language School as a perfect destination for your child. The
+                        Japanese School is always passionate to provide its pupils with a strong foundation in a
+                        nurturing environment, which will allow their natural gifts to unfold. We have peaceful
+                        atmosphere and homely environment, where students can enjoy every moment and learn comfortably.
+                        They will never be bored! A student can enjoy various activities besides study. Our staffs will
+                        always be in hand to keep a watchful eye on students’ academic performances. If you’re looking
+                        into the better school for your lovely children, we seriously urge you to come and look at KL
+                        Japanese Language School.We have been providing many services and have also been working as a
+                        bridge between Nepalese Students and Japanese Language Schools, Colleges and Universities.
+
+                </div>
+
+            </div>
+            <div class="service-box">
+                <div class="service-img"><img src="../images/suman.PNG" alt=""></div>
+                <div class="service-title"><br><b>Message from Founder <br>Mr. Suman Khanal <br></b></div>
+                <div class="service-desc">
+                    <p><br>Dear Parents and Students, <br>
+
+                        First of all would like to thank all the parents and students for your co-operation and warm
+                        wishes.We are happy and satisfied with the kind of achievement we have gained despite the many
+                        challenges.We develop a fair, supportive and congenial environment in the student
+                        community.Modern methods and techniques are used in teaching at KL Japanese Language School. We
+                        have highly experienced as well as young and brilliant teachers and their dedication, devotion
+                        and innovative pedagogic skills have brought about a sea change in our students. We believe in
+                        creating an environment where our students find an opportunity to explore their underlying
+                        potentiality and also further help in buiding their career as students are more focused on going
+                        abroad for their higher education after +2. We provide a silent and good learning environment
+                        here in KL Japanese Language. </p>
+                </div>
+
+            </div>
+            <div class="service-box">
+                <div class="service-img"><img src="../images/jhakri.jpg" alt=""></div>
+                <div class="service-title"><br><b>Message from Language Instructor / Counselor<br>Mr. Sanam Dulal
+                        <br></b></div>
+                <div class="service-desc">
+                    <p><br>Dear Parents and Students, <br>
+
+                        KL Japanese Language School is here not only for providing the counseling and providing the
+                        support for getting VISA to the students, rather KL Japanese Language School is also known for
+                        providing friendly behaviors, making feel them KL Japanese Language School like their home,
+                        taking care physically and mentally too. KL Japanese Language School don’t stop its caring
+                        behavior, even after the students are boarded to JAPAN and frequently keep following their
+                        traces on what they are doing, are they having any difficulties in living and fooding in JAPAN,
+                        or in Schools or in Language and so on. So, KL Language is very much concerned on their
+                        physical, mental and financial status in JAPAN. Hence, students have also placed us in one of
+                        the respectable status as a "Family" in their life.students have also placed us in one of
+                        the respectable status as a "Family" in their life.
+                    </p>
+                </div>
+
+            </div>
+            <div class="service-box">
+                <div class="service-img"><img src="../images/siss.jpg" alt=""></div>
+                <div class="service-title"><br><b>Message from Language Instructor / Counselor<br>Mrs. Pooja
+                        Karki<br></b></div>
+                <div class="service-desc">
+                    <p><br>Dear Parents and Students, <br>
+
+                        KL Japanese Language School believes that going to JAPAN only is not a big thing, but after
+                        going to JAPAN, socializing with the their culture, and being as a part of JAPANESE environment
+                        is what matters a lot. So, before going to JAPAN, students must learn about JAPAN, how to cope
+                        with the JAPANESE environment, and must be fluent with JAPANESE Language. And this is the Key
+                        Success factor for making a way to JAPAN.
+                        <br> Thus, we would like to welcome you all in KL Japanese Language School. We assure you a
+                        friendly environment and experienced service.we seriously urge you to come and look at KL
+                        Japanese Language School.We have been providing many services and have also
+                        been working as a bridge between Nepalese Students and Japanese Language Schools, Colleges and
+                        Universities.we seriously urge you to come and look at KL Japanese Language School.We have been
+                        providing many services and have also
+                        been working</p>
+
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="service-box">
+                <div class="service-img"><img src="../images/Sis.jpg" alt=""></div>
+                <div class="service-title"><br><b>Message from Office Administrator<br>Mrs. Prativa Lamsal<br></b></div>
+                <div class="service-desc">
+                    <p><br>Dear Parents and Students, <br>
+
+                        You all are welcome to our KL Japanese Language School and have a cool and hearty counseling and
+                        end your queries in this cozy environment.Someone must need Japanese language to stay in Japan,
+                        and the other must need this language to do business with Japanese people. Anyway if you can
+                        communicate with Japanese people nicely, you can stay easily in Japan and get various
+                        opportunities. There for KL Language School also focus on cultural exchange between Nepal and
+                        Japan. And we provide Nepali language class for foreigners too. According to this concept, KL
+                        Language School encourage those who try to go to Japan as Student and those who are planning for
+                        the same or belonging in Tourism Sector.we seriously urge you to come and look at KL Japanese
+                        Language School.We have been providing many services and have also
+                        been working as a bridge between Nepalese Students and Japanese Language Schools, Colleges and
+                        Universities.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="service-box">
+                <div class="service-img"><img src="../images/chakka.jpg" alt=""></div>
+                <div class="service-title"><br><b>Message from Language Instructor / Counselor<br>Mr. Suman
+                        Acharya<br></b></div>
+                <div class="service-desc">
+                    <p><br>Dear Parents and Students, <br>
+                        So why we are established here not only to send Nepalese students to Japan but also to make them
+                        known about its essence. And we are playing and we have to play huge role to expand Japanese
+                        language and culture in Nepal and make Japanese people to know about our language and culture
+                        too. At the time of registration of this school around 2014 we were worried with the
+                        establishment in this competitive time but we don't know how time passed by and we succeed to
+                        exchange around 2000 students at Japan.
+                        But we still think that we are not that much grown up to say that we are the only one because
+                        rather than focusing to increase the number of students only we use to focus to give them
+                        quality counseling and think from students side so why they can feel easy after they reach Japan
+                        too. Because they can easily dilute them in the Japanese society with the education and training
+                        that they get from KL Japanese Language School.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+       
+       
+        
+    
+
+    <!--This is the services page of the webiste that are provided by the institute-->
+    <fieldset id="services2">
+        <legend>
+            <h1>Services:</h1>
+        </legend>
+       
+      
+        <div class="services-con2">
+            <div class="services-box2">
+                <div class="services-title2">
+                    <h2>Japanese Language Classes</h2>
+                </div>
+                <div class="services-desc2">
+                    <p>
+                        <li>Choose evening or morning class or also you can customize your time
+                        </li>
+
+                        <li>Learn From expertise N2 Level Teachers with 5 years of experiences</li>
+
+                        <li>Classes contains Writing, Reading, Speaking and Listening</li>
+
+                        <li>Get opportunity to learn Japanese culture and to copup with it</li>
+                    </p>
+                </div>
+            </div>
+
+            <div class="services-box2">
+                <div class="services-title2">
+                    <h2>Presentation Every Week</h2>
+                </div>
+                <div class="services-desc2">
+                    <p>
+                        <li>Presentation of 10-15 minutes per person</li>
+
+                        <li>Presentation must be on Japanese Language
+                        </li>
+                        <li>Feedbacks will be given to improve</li>
+                    </p>
+                </div>
+            </div>
+
+            <div class="services-box2">
+                <div class="services-title2">
+                    <h2>Career Guidance and Counselling</h2>
+                </div>
+                <div class="services-desc2">
+                    <p>
+                        <li>We will show you Multiple ways to reach your goal</li>
+
+                        <li>We will suggest for Obstacles and solutions while going Japan</li>
+
+                        <li>Proper counselling to be a tourist guide</li>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="services-box2">
+                <div class="services-title2">
+                    <h2>Teaching Methodology</h2>
+                </div>
+                <div class="services-desc2">
+                    <p>
+                        <li> Latest syllabus with audio visual learning classes</li>
+
+                        <li>Internet class to support Language study</li>
+
+                        <li>
+
+                            Many more extra activities like Japanese Film Show Programme, Hasikai, Karaoke, Seminar, etc
+                        </li>
+                    </p>
+                </div>
+            </div>
+
+            <div class="services-box2">
+                <div class="services-title2">
+                    <h2>Guidance by trained teachers</h2>
+                </div>
+                <div class="services-desc2">
+                    <p>
+                        <li>Teachers with the experience to guide numbers of Japanese Language Learners and provide them
+                            a right guidance toward their future career</li>
+
+                        <li>
+                            Better environment where teachers and students can teach and learn easily </li>
+
+                        <li>Students can grow in terms of knowledge, freedom and responsibility followed by a teachers
+                        </li>
+                    </p>
+                </div>
+            </div>
+            <div class="services-box2">
+                <div class="services-title2">
+                    <h2>Visa Applying Guidence</h2>
+                </div>
+                <div class="services-desc2">
+                    <p>
+                        <li>We will support you for your visa appliance.</li>
+
+                        <li>Guidance for the documents</li>
+
+                        <li>Culture, Rules and Regulation class from experienced teachers.
+                        </li>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Here student can register and can join the class-->
+    <div class="images-slide"><img name="imageSlider" src="" alt="" id="slider" width="100%"></div>
+    <div class="innerText">
+        <h2>Register now 50% off</h2>
+    </div>
+
+
+
+
+    <fieldset id="register">
+        <legend>
+
+            <h1>Register</h1>
+        </legend>
+
+        <!-- register form -->
+        <div class="form-reg">
+            <form id="registerform" method="POST">
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" name="" id="fullname" required placeholder="Place your full name here.."> <br>
+                <label for="email-reg">Email:</label><br>
+                <input type="email" name="" id="email-reg" required placeholder="abc@gmail.com"> <br>
+                <label for="number">Number:</label><br>
+                <input type="number" name="" id="number" required placeholder="10 digit mobile phone number.."> <br>
+                <label for=" address">Address:</label><br>
+                <input type="text" name="" id="address" required placeholder="Your Address.."><br>
+                <select id="select" required>
+                    <option>Morning Shift</option>
+                    <option>Day shift</option>
+                    <option>Evening shift</option>
+                </select><br>
+
+                <label for="area-reg">Message:</label><br>
+                <textarea name="" id="area-reg" cols="30" rows="10" required></textarea><br>
+                <input type="submit" value="submit" id="sendmsg">
+            </form>
+
+        </div>
+    </fieldset>
+
+
+
+
+
+
+
+
+
+       <!--Here the datas that are entered in the register form gets stored-->
+    <fieldset class="datas">
+        <legend>
+            <h1>Datas:</h1>
+        </legend>
+        <div id="fatchedData"></div>
+    </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--This is the page where photos related to japanese classes are shown-->
+    <div id="gallery">
+        <div class="gallery-con">
+            <div class="gallery-box">
+                <div class="imgs"><a href="../images/class0.jpg" target="_blank"><img src="../images/class0.jpg"
+                            alt=""></a></div>
+                <div class="imgs"><a href="../images/class1.jpg" target="_blank"><img src="../images/class1.jpg"
+                            alt=""></a></div>
+                <div class="imgs"><a href="../images/class4.png" target="_blank"><img src="../images/class4.png"
+                            alt=""></a></div>
+                <div class="imgs"><a href="../images/class01.PNG" target="_blank"><img src="../images/class01.PNG"
+                            alt=""></a></div>
+                <div class="imgs"><a href="../images/class02.jpeg" target="_blank"><img src="../images/class02.jpeg"
+                            alt=""></a></div>
+                <div class="imgs"><a href="../images/class3.jpg" target="_blank"><img src="../images/class3.jpg"
+                            alt=""></a></div>
+                <div class="imgs"><a href="../images/class10.jpg" target="_blank"><img src="../images/class10.jpg"
+                            alt=""></a></div>
+                <div class="imgs"><a href="../images/class2.webp" target="_blank"><img src="../images/class2.webp"
+                            alt=""></a></div>
+                <div class="imgs"><a href="../images/class00.jpg" target="_blank"><img src="../images/class00.jpg"
+                            alt=""></a></div>
+                <div class="imgs"><a href="../images/class101.jpg" target="_blank"><img src="../images/class101.jpg"
+                            alt=""></a></div>
+                <div class="imgs"><a href="../images/class07.jpg" target="_blank"><img src="../images/class07.jpg"
+                            alt=""></a></div>
+                <div class="imgs"><a href="../images/class03.PNG" target="_blank"><img src="../images/class03.PNG"
+                            alt=""></a></div>
+                <div class="imgs"><a href="../images/class20.jpg" target="_blank"><img src="../images/class20.jpg"
+                            alt=""></a></div>
+
+                <div class="imgs"><a href="../images/class9.jpg" target="_blank"><img src="../images/class9.jpg"
+                            alt=""></a></div>
+                <div class="imgs"><a href="../images/class7.jpg" target="_blank"><img src="../images/class7.jpg"
+                            alt=""></a></div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--This is the footer page of the website-->
+    <footer id="footer-box">
+        <div id="footer-con">
+            <div id="footer-con-box">
+                <div class="title_footer1">
+
+                    <h2><span><i class="fas fa-school fa-md"></i></span> </i>KL Japanese Language School:</h2>
+                    <div class="fot-txt">
+                        <p> Whether you’re a beginner starting with the basics or looking to practice your reading,
+                            writing, and speaking, KL Japanese Language School will help you alot.. <br> <br> Thank you
+                            so much for your valuable time..🙏🙏</p>
+                    </div>
+                </div>
+                <div class="quick-links">
+                    <h1>Quick Links</h1>
+
+                    <h2><a href="#register">🔐Register</a></h2>
+                    <h2><a href="#contact">📞Contact</a></h2>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="footer-con">
+            <div id="footer-con-box " class="one-ft">
+
+                <div class="title_footer2">
+                    <h2>Contact:</h2>
+                </div>
+                <div class="contact-info-footer">
+                    <h2><i class="far fa-envelope"></i><br> Pujankhatiwada26@gmail.com</h2>
+                    <h2><i class="fas fa-phone-alt"></i><br> (+977)9869116665</li>
+                    </h2>
+                    <h2><i class="far fa-envelope"></i> NP03S20018@heraldcollege.edu.np</h2>
+                    <h2><i class="fas fa-phone-alt"></i><br> (+977)9844477092</li>
+                    </h2>
+                    <h2><i class="fas fa-location-arrow"></i><br>Putalisadak,Kathmandu</h2><br>
+                    <a href="https://www.facebook.com/poojan.khatiwada/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/puzz_on_10/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/PuzzOn1"><i class="fab fa-twitter"></i></a>
+                    <a href="https://t.me/Pujan478"><i class="fab fa-telegram-plane"></i></a>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <div id="last-footer">
+        <div class="last-txt">
+            <h2>Copyright &copy; 2020 <span>Pujan Khatiwada.All Rights Reserved.</span></h2>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Linking javascript to index.html-->
+    <script src="../js/index.js">
+
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js">
+    </script>
+</body>
+
+</html>
